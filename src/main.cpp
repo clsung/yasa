@@ -15,8 +15,8 @@ int main(int argc, char** argv)
     // Open the test file (contains UTF-8 encoded text)
     ifstream fs8(test_file_path);
     if (!fs8.is_open()) {
-    cout << "Could not open " << test_file_path << endl;
-    return 0;
+        cout << "Could not open " << test_file_path << endl;
+        return 0;
     }
 
     unsigned line_count = 1;

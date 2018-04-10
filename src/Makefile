@@ -10,7 +10,7 @@ PROG = yasa
 test = testyasa
 test_src = Test/testyasa.c
 LIBRARY= libyasa.so.0.2.4
-LFLAGS = -shared -W1,-soname,libyasa.so.0
+LFLAGS = -shared -Wl,-soname,libyasa.so.0
 
 all:	${PROG} ${LIBRARY}
 
